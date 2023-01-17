@@ -14,7 +14,7 @@ double[] getGenerationOfArray(int count, int start, int end)
     double[] array = new double[count];
     for (int i = 0; i < count; i++)
     {
-        array[i] = new Random().Next(start, end + 1) / 1.2;
+        array[i] = new Random().Next(start, end) + new Random().NextDouble();
     }
     return array;
 }
